@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Formularios (inputs) </h1>
+    <form >
+
+        <!-- type="text"-->
+        <label for="nombre">Nombre: </label><input id="nombre" placeholder="Francisco" type="text" required>
+        <label for="apellido">Apellido: </label><input id="apellido" type="text" minlength="3" maxlength="5">
+        <br>
+        <br>
+        <label for="">Correo: </label><input id="email" type="email">
+        <label for="pss">Password: </label><input id="pss" type="password">
+        <label for="telefono">Telefono: </label><input type="number" id="telefono" min="0" max="10">
+        <br>
+
+        <h2>Selecciona una opción</h2>
+        <input type="radio" name="sexo" checked id="" value="Masculino" >Masculino
+        <input type="radio" name="sexo" id="" value="Fenmenino" >Femenino
+        <br>
+        <input checked type="checkbox" value="opcion1">Opcion 1 
+        <input type="checkbox" value="opcion2">Opcion 2
+        <input type="checkbox" value="opcion3">Opcion 3
+        <input type="checkbox" value="opcion4">Opcion 4  
+        <br>
+
+        <label for="date">Seleccione una fecha: </label><input type="date" min="2020-01-01" max="2020-06-21" value="2020-01-01" >
+        <label for="">Seleccione un mes: </label><input type="month" min="2020-01" max="2020-10">
+        <br>
+        <br>
+        <label for="">Selecciona un color: </label><input type="color" >
+        <br>
+        <label for="">Rango: </label><input type="range">
+        <br>
+        <label for="">Selecciona una opcion: </label>
+        <select name="" id="">
+            <option selected disabled value="">--Selecciona--</option>
+            <option value="ch">CH</option>
+            <option value="m">M</option>
+            <option value="g">G</option>
+            <option value="eg">EG</option>
+        </select>
+
+
+
+        <br>
+        <input hidden type="submit" value="Probar Formulario">
+
+    </form>
+    
+</body>
+</html>
